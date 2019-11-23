@@ -1,19 +1,34 @@
 
-let colors=['red','black']
-
+// let colors=['red','black']
+let colors=['Red','Black']
+let box=document.querySelectorAll(".box")
 
 let btn=document.querySelector('.button')
 let bank=1000
 
 let result=document.querySelector('.result')
+let click=""
+box.forEach(el=>{
+el.addEventListener('click',()=>{
+let amount=document.querySelector('.amount').value
+  if(amount==''){
+  alert( "Enter Bet")
+  }else{
+  let click=event.target.id
+  console.log(click)
+  logic(click)
+  }
 
 
-btn.addEventListener('click',()=>{
-alert('hi')
+})
+})
 
+// btn.addEventListener('click',()=>{
+
+function logic(click){
   let colorRandom=Math.floor(Math.random()*2)
-  let color=document.querySelector(".color").value
-  console.log(color)
+  // let color=document.querySelector(".color").value
+  // console.log(color)
 
 
   let amount=document.querySelector('.amount').value
@@ -22,7 +37,7 @@ alert('hi')
   let winText
   let won
 
-if(color===colors[colorRandom]){
+if(click===colors[colorRandom]){
   earnings = (amount * 2);
   winText = "You Win"
   won = true;
@@ -48,11 +63,12 @@ fetch('userInput',{
         })
         .then(data => {
           console.log(data)
-          window.location.reload(true)
+          setTimeout(function(){
+    window.location.reload();
+},3000);
+          // window.location.reload()
         })
-      });
-let btn2=document.querySelector('.btn-default')
-btn2.addEventListener('click',()=>{
-  alert('hi')
-  let hide=document.querySelector('.hide').style.display='none'
-})
+}
+
+
+      // });

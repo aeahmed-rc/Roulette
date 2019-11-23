@@ -4,16 +4,25 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><link rel="stylesheet" href="roulette.css">
     <title></title>
   </head>
   <body>
+  <h1>Cass Casino</h1>
+     <div class="inputs">
 
-      <input class="color" type="text" name="color" value="" placeholder='Please put in red or black'>
 
-      <input class="amount "type="number" min="0" name="amount" value="">
-      <button class="button" type="submit" name="button">Play</button>
+       <input class="amount in "type="number" min="0" name="amount" value="" placeholder="Enter bet amount">
+      <h4>Choose Your Color!</h4>
+       <div id="Black" class="black box">
 
-    <h2 class="result"></h2>
+       </div>
+       <div id="Red" class="red box">
+
+       </div>
+     <h2 class="result"></h2>
+     </div>
+
 
 
     <section>
@@ -23,6 +32,68 @@
       <!-- <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a> -->
       <!-- <a href="/signup" class="btn btn-default hide"><span class="fa fa-user"></span>signup</a> -->
     </section>
+    <div class="main">
+  <button type="button" class="btn" id="spin"><span class="btn-label">Spin</span></button>
+  <button type="button" class="btn btn-reset" id="reset"><span class="btn-label">New Game</span></button>
+  <div class="plate" id="plate">
+    <ul class="inner">
+      <li class="number"><label><input type="radio" name="pit" value="32" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="15" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="19" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="4" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="21" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="2" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="25" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="17" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="34" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="6" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="27" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="13" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="36" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="11" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="30" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="8" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="23" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="10" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="5" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="24" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="16" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="33" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="1" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="20" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="14" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="31" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="9" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="22" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="18" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="29" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="7" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="28" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="12" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="35" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="3" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="26" /><span class="pit"></span></label></li>
+      <li class="number"><label><input type="radio" name="pit" value="0" /><span class="pit"></span></label></li>
+    </ul>
+    <div class="data">
+      <div class="data-inner">
+        <div class="mask"></div>
+        <div class="result">
+          <div class="result-number">00</div>
+          <div class="result-color">red</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="previous-results">
+    <ol class="previous-list">
+      <li class='visuallyhidden placeholder'>No results yet.</li>
+    </ol>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script><script  src="roulette.js"></script>
     <script type="text/javascript" src="main.js">
 
     </script>

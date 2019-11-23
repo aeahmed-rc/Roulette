@@ -1,3 +1,49 @@
 .hide{
   display:inline-block;
 }
+body{
+  /* background-image: url("check.png"); */
+color:white;
+}
+.inputs{
+  width:40%;
+  margin: 0 auto;
+
+}
+.in{
+  /* height:150px;
+  width:30%; */
+  /* background-color: black; */
+  color:black;
+  font-size: 30px;
+  width:70%;
+  margin-bottom: 30px;
+}
+/* .ran{
+border:2px solid white;
+height: 150px;
+width: 30%;
+background-color: black;
+} */
+
+h4{
+  font-size: 30px;
+
+}
+.result{
+  color:white;
+  font-size: 30px;
+  clear:both;
+}
+.black{
+  width:35%;
+  height: 150px;
+  background-color: black;
+  float:left;
+}
+.red{
+    width:35%;
+    height: 150px;
+background-color: red;
+float: left;
+}
