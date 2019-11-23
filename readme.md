@@ -10,4 +10,4 @@
 #Server:
 ## The casino owner have their own login account and can login and access the information that was stored in the data base. The stored information is the casinos losses and wins as well as the amount of money they have. The server fetches the information stored in the data base and it presents it on the casino owners profile page.
 
-![Pic]("pic.png")
+![Pic](/public/pic.png)
