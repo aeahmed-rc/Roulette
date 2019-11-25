@@ -1,4 +1,4 @@
-# Project : Roulette
+🎰 # Project : Roulette
 # Goal: Users can play Roulette via my web application and make bets. The casino owners can log in and track their winnings and losses.
 
 ## How to play:
